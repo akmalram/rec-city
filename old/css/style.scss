@@ -1,0 +1,45 @@
+img {
+    max-width: 70%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #fff;
+    font-family: 'Overlock', cursive;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 500px;
+}
+
+h1 {
+    font-size: 60px;
+
+    animation: animation 1s ease-in-out forwards infinite alternate;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+    }
+}
